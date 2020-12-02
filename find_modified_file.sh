@@ -11,7 +11,7 @@ elif [ "$3" = "delete" ]
 then
     echo "Removendo arquivos com '$2'."
     find "$folder_path" -not -path "$folder_path" -type f -newermt "$2" -exec rm -rv {} \;
-elif [ $3 = "custom" ]
+elif [ "$3" = "custom" ]
 then
     echo "Comando customizado com '$2'."
     find "$folder_path" -not -path "$folder_path" -type f -newermt "$2" -exec $4 {} \;
