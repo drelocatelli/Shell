@@ -15,5 +15,7 @@ elif [ $3 = "custom" ]
 then
     echo "Comando customizado com '$2'."
     find "$folder_path" -not -path "$folder_path" -type f -newermt "$2" -exec $4 {} \;
+else
+    echo "Comando digitado incorretamente."
 fi
 cd ~
