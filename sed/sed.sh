@@ -1,0 +1,1 @@
+sed 's/\/grande\//\//g' texto
