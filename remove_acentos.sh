@@ -6,7 +6,5 @@ then
 else
     file="$1"
 fi    
-mv $file "old.$file"
-echo `sed 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚçÇ/aAaAaAaAeEeEiIoOoOoOuUcC/' "old.$file" >> "$file"`
-rm -r "old.$file"
+echo -n `sed -i 'y/áÁàÀãÃâÂéÉêÊíÍóÓõÕôÔúÚçÇ/aAaAaAaAeEeEiIoOoOoOuUcC/' $file`
 echo "Acentuação removida de '$file'."
