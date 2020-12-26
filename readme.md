@@ -1,3 +1,6 @@
+## Guia de comandos Shell
+[Leia mais](https://www.uniaogeek.com.br/guia-de-comandos-shell-terminal-gnulinux/)
+
 ## Comandos mais utilizados
 [Leia Mais](https://www.tutorialspoint.com/unix/unix-useful-commands.htm)
 
